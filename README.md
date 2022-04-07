@@ -29,4 +29,5 @@ migrate repo from bitbucket to github
           //git push --mirror//
 
       After completing all the steps, now check the result in GitHub.
+      In this case, we have got the bitbucket repository in github.
       
