@@ -1,33 +1,18 @@
-# bitbucket-github
-migrate repo from bitbucket to github
+# Migrating repository from BitBucket to GitHub
+Select BitBucket repository and make sure committed all the changes.
 
+1. Clone the BitBucket repository.
+ 
+    git clone --mirror <Bitbucket_repo_address
 
-      First of all, choose one repository which want to migrate bitbucket to github,
+2. Create a repository in GitHub
+          
+3. change remote origin address	
 
-      And then make sure all necessary data is in the repository.
+   git remote add origin <GitHub_repo_address>
 
-      Next, we want to clone the choosen repository in local,using the --mirror parameter.
-      follow the below comment to clone repository from bitbucket.
-
-          //git clone --mirror <Bitbucket_repo_address>//
-
-      Now we got a repository in local.
+4. List and confirm all the branches
       
-      Now we have the bitbucket repository,next we need to replace the remote origin address	
-      so follow the below mentioned comment to replace the remote address
+5. Finally push changes into GitHub repository
 
-      In github, copy the URL and paste it in below comment.
-
-          //git remote add origin <GitHub_repo_address>//
-      
-      Neccessary to know we have all the branches in local mechine.so, run the below comment
-
-          //git branch//
-
-      So we have one last thing to do, which is syncing the local copy with the new target repository address in GitHub.
-
-          //git push --mirror//
-
-      After completing all the steps, now check the result in GitHub.
-      In this case, we have got the bitbucket repository in github.
-      
+   git push --mirror
