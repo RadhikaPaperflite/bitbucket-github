@@ -11,7 +11,7 @@ Select BitBucket repository and make sure committed all the changes.
     
 3. Change remote origin address	
 
-   `git remote add origin <GitHub_repo_address>`
+   `git remote set-url origin <GitHub_repo_address>`
 
 4. List and confirm all the branches
 
